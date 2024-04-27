@@ -5,16 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class Contact {
     private int id;
-    private String name;
-    private String password;
-    private Detail detail;
-    private List<Contact> contacts;
+    private String email;
+    private String mobile;
     private LocalDateTime createdAt;
 }
